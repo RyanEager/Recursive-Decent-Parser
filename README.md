@@ -15,4 +15,9 @@ The grammar that you are to use has start symbol Expr and rules
        IfExpr -> if Expr Expr Expr
        
 Here the parentheses and brackets are terminal symbols; the braces and vertical bars are metasymbols. The grammar is appropriate for recursive descent parsing.
-The symbols SymbolLiteral, Var, PrimFName and UserFName are preterminals. A Var is a string that begins with a capital letter. A SymbolLiteral is a string that begins with the backquote character `. A PrimFName is one of the strings car, cdr, or cons. A UserFunctionName is a string that begins with a lower-case letter, is not a PrimFName, and does not appear on the right-hand side of any rule. These constraints are enforced in the Token class.
+
+The symbols SymbolLiteral, Var, PrimFName and UserFName are preterminals. A Var is a string that begins with a capital letter. A SymbolLiteral is a string that begins with the backquote character `. 
+
+A PrimFName is one of the strings car, cdr, or cons. 
+
+A UserFunctionName is a string that begins with a lower-case letter, is not a PrimFName, and does not appear on the right-hand side of any rule. These constraints are enforced in the Token class.
